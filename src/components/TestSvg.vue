@@ -1,21 +1,24 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <Face />
+  <div id="card" for="test">
+    dsa
+    <object id="test" :data="require('@/assets/Agreement.svg')" type="image/svg+xml" style="width: 200px" class="svg">
+    </object>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Face from '@material-design-icons/svg/outlined/face.svg';
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'testSvg',
   props: {
-    msg: String,
   },
-  components: {
-    Face
+  setup() {
+    // onMounted(() => {
+    //   // @ts-ignore
+    //   const icon = document.querySelector('.svg')?.contentDocument || null
+    //   console.log(icon)
+    // })
   }
 });
 </script>
@@ -25,14 +28,17 @@ export default defineComponent({
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }
