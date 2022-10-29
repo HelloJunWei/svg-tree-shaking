@@ -1,16 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <TestSvg />
+  <Icon icon="Face" />
+  <Icon icon="Search" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import TestSvg from './components/TestSvg.vue';
+import Icon from './components/Icon.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    TestSvg
+    Icon
   }
 });
 </script>
