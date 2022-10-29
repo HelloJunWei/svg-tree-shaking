@@ -1,17 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Icon icon="Face" />
-  <Icon icon="Search" />
+  <Icon icon="Face" style="font-size: 30px;" />
+  <MaterialFontIcon name="face"  />
+  <Icon icon="Close" />
+  <MaterialFontIcon name="close" style="font-size: 30px;" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Icon from './components/Icon.vue'
+import MaterialFontIcon from './components/MaterialFontIcon'
 
 export default defineComponent({
   name: 'App',
   components: {
-    Icon
+    Icon,
+    MaterialFontIcon
   }
 });
 </script>
